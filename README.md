@@ -49,25 +49,23 @@ If you are using a Mac or Linux, then python comes pre-installed. In addition, y
 
 1. [Jinja2][ji] is a templating engine, developed by [Pocoo Team][pt].
 2. [Markdown][md] is a text markup language, developed by [John Gruber][jg]. It's nearly plain text, i.e., zero learning curve, which is why it's awesome.
-3. [Smartypants][sp] is a typographical enhancer, also by [John Gruber][jg].
-4. [PyRSS2Gen][p2] is a library for generating RSS 2.0 feeds, by [Andew Dalke][ad], et al.
-5. [jinja_markdown][jm]
+3. [jinja_markdown][jm] to render markdown in pages.
 
 #### Install these on a [Mac OS X][m] via [pip][] -- python package installer:
 
     $ sudo easy_install pip
     Password:
-    $ sudo pip install jinja2 markdown mdx_smartypants PyRSS2Gen
+    $ sudo pip install jinja2 markdown jinja2_markdown
     
 #### On [Ubuntu][u] (Debian) linux:
 
     $ sudo apt-get install python-pip
     Password:
-    $ sudo pip install jinja2 markdown mdx_smartypants PyRSS2Gen
+    $ sudo pip install jinja2 markdown jinja2_markdown
 
 To update these packages, you may run the following:
 
-    $ sudo pip install --upgrade jinja2 markdown mdx_smartypants PyRSS2Gen
+    $ sudo pip install --upgrade jinja2 markdown jinja2_markdown
 
 ## Create a site structure on your computer (This is just an example)
 
