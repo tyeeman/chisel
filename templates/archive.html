@@ -1,7 +1,8 @@
 {% extends "base.html" %}
 
 {% block header %}
-    <h2>Archives</h2>
+    <h2>Archive</h2>
+    <p>There are {{ entries | length }} entries in this archive.</p>
 {% endblock %}
 
 {% block main %}
@@ -14,7 +15,7 @@
                 <ul class="month_block">
                     {% for day, day_list in month_list|groupby('day')|reverse %}
                         {% for entry in day_list %}
-                            <li><a href="/{{ entry.url }}">{{ entry.title }}</a> -- <small>{{ entry.pretty_date }}</small></li>
+                            <li><a href="/{{ entry.url }}">{{ entry.title }}</a> &ndash; <small>{{ entry.pretty_date }} ({{ entry.content | wordcount // 300 + 1 }} min read)</small></li>
                         {% endfor %}
                     {% endfor %}
                 </ul>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+   <title>Site title</title>
+   <description>Add description here</description>
+   <atom:link href="http://mysite.net/rss.xml" rel="self" type="application/rss+xml"/>
+   <link>http://mysite.net/</link>
+   <language>en-us</language>
+    {% for entry in entries %}
+    <item>
+      <title>{{ entry.title | escape }}</title>
+      <link>http://mysite.net/{{ entry.url }}</link>
+      <guid>http://mysite.net/{{ entry.url }}</guid>
+      <pubDate>{{ entry.rssdate }}GMT</pubDate>
+      <description>{{ entry.content | escape }}</description>
+    </item>
+    {% endfor %}
+</channel>
+</rss>
