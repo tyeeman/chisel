@@ -86,6 +86,11 @@ def write_feed(url, data):
     with open(path, "w") as file:
         file.write(data.encode('UTF-8'))
 
+def write_sitemap(url, data):
+    path = DESTINATION + url
+    with gzip.open(path, "wb") as file:
+        file.write(data.encode('UTF-8'))
+
 @step
 def gen_home(f, e):
     write_file('index' + URLEXT, e.get_template('home.html').render(entries=f[:HOME_SHOW]))
