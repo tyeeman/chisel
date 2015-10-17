@@ -1,5 +1,7 @@
 # Chisel
 
+[![Build Status](https://travis-ci.org/ckunte/chisel.svg?branch=master)](https://travis-ci.org/ckunte/chisel)
+
 Written by [David Zhou][dz] in [python][py], forked and enhanced by [Chyetanya Kunte][c], [Chisel][ch] is an extremely lightweight (just 8kB) blog generating script. 
 
 This fork includes the following additions and enhancements:
