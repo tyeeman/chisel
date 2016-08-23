@@ -17,6 +17,10 @@ This fork includes the following additions and enhancements:
 - List number of posts using `{{ entries | length }}` in Jinja (archive.html) template.
 - Time taken to read a post using `{{ entry.content | wordcount // 300 + 1 }} min read`, where 300 is the number of words a typical reader reads per minute. (Posts less than 1 minute long to read will approximate to 1 min.)
 
+### Screenshots of a custom site / weblog built with chisel
+
+![](./example.png)
+
 ## What it does not do
 
 Chisel keeps it simple and stupid. And so, there is
